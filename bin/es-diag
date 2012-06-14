@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "es-diag/cli"
+
+ES::Diag::CLI.start
+
