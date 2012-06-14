@@ -3,6 +3,9 @@
 `es-diag` is a command line tool that evaluates your machine and setup, points out typical machine misconfiguration for Elastic Search, sniffs out health parameters from a running Elastic Search instance (not impl. yet), and recommends ways to amend it.
 
 
+<img src="https://raw.github.com/jondot/es-diag/master/resources/screen.png" /><br/>
+
+
 
 
 ## Getting Started
