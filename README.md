@@ -11,7 +11,8 @@ You need to have a recent Ruby on your system.
 
     $ gem install es-diag
     $ es-diag status
-    # should output a lot of data
+    # should output a lot of useful data if your system
+    # isn't healthy. a list of things it checked otherwise.
 
 
 ## Adding checks
