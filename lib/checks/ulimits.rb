@@ -1,4 +1,4 @@
-title "ulimit set appropriately - avoid 'Too many open files'"
+title "ulimit Settings ('Too many open files')"
 
 how_to """
     To raise the limit add to /etc/security/limits.conf the lines:

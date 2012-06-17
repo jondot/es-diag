@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
   # s.add_development_dependency "rspec"
   s.add_runtime_dependency "thor"
   s.add_runtime_dependency "ohai"
-
+  s.add_runtime_dependency "hashie"
 end

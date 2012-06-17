@@ -8,7 +8,7 @@ class ES::Diag::Check
   end
 
   def data
-    ES::Diag::Context.data
+    @data ||= ES::Diag::Context.new(@ui).data
   end
 
   def how_to(text)
@@ -37,7 +37,7 @@ class ES::Diag::Check
         @ui.warn "- #{warning}"
       end
       if @run_context[:help]
-        @ui.info "\n\nUse these instructions to amend the problems:"
+        @ui.info "\n\n#{@ui.em 'Use these instructions to amend the problems:'}"
         @ui.info @run_context[:help] + "\n"
       end
     end
