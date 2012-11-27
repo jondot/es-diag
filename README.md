@@ -27,6 +27,7 @@ submit pull requests very easily.
 Writing a check is designed to be VERY easy, using a simple DSL. Lets take a look at an
 example:
 
+```ruby
     # set the check title
     title "ulimit set appropriately - avoid 'Too many open files'"
 
@@ -66,6 +67,7 @@ example:
     if data.ulimit['hard']['nofiles'] < 32_000
       warn "Increment your hard file limit (#{data.ulimit['hard']['nofiles']}) to 32000"
     end
+```
 
 Next, put all of this in a file and drop it in the `lib/checks` folder.
 It will be picked up automatically.
